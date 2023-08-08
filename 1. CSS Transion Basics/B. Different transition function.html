@@ -1,0 +1,62 @@
+<!-- 
+    transition-timing-function : how the chnages in the property will occur
+    ease - the change starts slow then go faster then finish slow
+    liner- the chnage occurs at the same rate
+    ease-in - the change starts slow then go faster before the end
+    ease-out: the changes starts fast then slow down before the end
+    ease-in-out: the change starts slow then go faster then finisihes slow.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition-timing-function</title>
+  </head>
+  <style>
+    .container {
+      border: 2px solid red;
+    }
+    .move {
+      /*       display: block; */
+      border: 2px solid black;
+      width: 100px;
+      padding: 0.6rem;
+      margin: 1rem;
+      background-color: green;
+      font-weight: 800;
+      transition-property: translate();
+      transition: 3s;
+    }
+    #ease {
+      transition-timing-function: ease;
+    }
+    #linear {
+      transition-timing-function: linear;
+    }
+    #ease-in {
+      transition-timing-function: ease-in;
+    }
+    #ease-out {
+      transition-timing-function: ease-out;
+    }
+    #ease-in-out {
+      transition-timing-function: ease-in-out;
+    }
+    .move:hover {
+      transform: translate(1200px, 0);
+      /*                  X-axis   Y-axis  */
+      background-color: yellow;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="move" id="ease">Ease (Default)</div>
+      <div class="move" id="linear">Linear</div>
+      <div class="move" id="ease-in">Ease-in</div>
+      <div class="move" id="ease-out">Ease-out</div>
+      <div class="move" id="ease-in-out">Ease-In-Out</div>
+    </div>
+  </body>
+</html>
