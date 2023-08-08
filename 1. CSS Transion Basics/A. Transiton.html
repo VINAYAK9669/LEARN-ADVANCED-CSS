@@ -1,1 +1,74 @@
+<!-- 
+  * In this we will learn two things
+       1) Transition-property
+       2) Transition
+
+  * 1) Transition-property
+
+       - transition-property is a property that allows you to specify which CSS properties should undergo a 
+         transition when their values change.
+       - The transition-property property accepts one or more property names or the value "all" 
+         to indicate that all eligible properties should undergo transitions.
+
+        How we can use it:
+
+        .element {
+                    transition-property: width, height;
+                  }
+
+
+  * 2) 
+        - The transition property in CSS is a shorthand property that combines multiple individual transition-related properties into a single declaration. 
+        - The individual properties that can be included in the transition shorthand are:
+              1) transition-property
+              2) transition-duration
+              3) transition-timing-function
+              4) transition-delay
+
+          The syntax for the transition property is as follows:
+
+          .element {
+                    transition: [property] [duration] [timing-function] [delay];
+                    }
+
+     *DEMO-  In this below example we can see that the background color changes to lightpink after 1s of hover
+             and the duration of the transition is 0.3s
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition</title>
+    <style>
+      .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /* Advanced CSS Concept */
+        transform: translate(-50%, -50%);
+      }
+      /* Styling a button */
+      button {
+        padding: 0.8rem;
+        background-color: rgb(4, 236, 74);
+        color: blue;
+        border-radius: 8px;
+        /* Advanced concept of CSS */
+        transition: background-color 1s 1s;
+        /*          property    duration     delay    */
+      }
+
+      button:hover {
+        background-color: lightpink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button>Hover on me to See the Transition Effect</button>
+    </div>
+  </body>
+</html>
 
