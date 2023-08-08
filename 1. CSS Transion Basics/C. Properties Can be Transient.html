@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSS animatin, transitions and transforms</title>
+  </head>
+  <style>
+    div {
+      height: 90px;
+      width: 290px;
+      font-size: 28px;
+      margin: 20px;
+      color: white;
+      border: none;
+      background-color: blue;
+      line-height: 90px;
+      text-align: center;
+      transition: all 1s;
+    }
+
+    .background:hover {
+      background-color: green;
+    }
+
+    .color:hover {
+      color: red;
+    }
+
+    .font-size:hover {
+      font-size: 32px;
+    }
+
+    .height:hover {
+      height: 120px;
+    }
+
+    .width:hover {
+      width: 340px;
+    }
+
+    .letter-spacing:hover {
+      letter-spacing: 5px;
+    }
+
+    .line-height:hover {
+      line-height: 120px;
+    }
+
+    .margin-bottom:hover {
+      margin-bottom: 50px;
+    }
+
+    .margin-top:hover {
+      margin-top: 50px;
+    }
+
+    .opacity:hover {
+      opacity: 0.3;
+    }
+
+    .padding:hover {
+      padding: 20px;
+    }
+
+    .border-color,
+    .border-width {
+      border: 6px solid green;
+    }
+
+    .border-color:hover {
+      border-color: red;
+    }
+
+    .border-width:hover {
+      border-width: 12px;
+    }
+  </style>
+
+  <body>
+    <div class="background">background</div>
+    <div class="color">color</div>
+    <div class="font-size">font-size</div>
+    <div class="height">height</div>
+    <div class="width">width</div>
+    <div class="letter-spacing">letter-spacing</div>
+    <div class="line-height">line-height</div>
+    <div class="margin-top">margin-top</div>
+    <div class="margin-bottom">margin-bottom</div>
+    <div class="opacity">opacity</div>
+    <div class="padding">padding</div>
+    <div class="border-color">border-color</div>
+    <div class="border-width">border-width</div>
+  </body>
+</html>
