@@ -1,0 +1,56 @@
+<!-- 
+
+    By this excerise we will learn below things
+    1) How transform: scaleX() works
+    2) How transform: scaleY() works
+    2) How transform: scale() works
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Transform Translate</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      height: 100vh;
+    }
+    .box {
+      color: white;
+      background-color: blue;
+      height: 80px;
+      width: 80px;
+      text-align: center;
+      font-size: 12px;
+      transition: 1s;
+      padding: 0.8rem;
+    }
+
+    .scaleX:hover {
+      transform: scaleX(1.2);
+    }
+
+    .scaleY:hover {
+      transform: scaleY(1.2);
+    }
+
+    .scale:hover {
+      transform: scale(1.2, 1.2);
+      /* scale (+right, +bottom) */
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="scaleX box">I translate horizontally</div>
+      <div class="scaleY box">I translate vertically</div>
+      <div class="scale box">I translate horizontally and vertically both</div>
+    </div>
+  </body>
+</html>
