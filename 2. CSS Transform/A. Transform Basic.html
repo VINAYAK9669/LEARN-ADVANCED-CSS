@@ -1,0 +1,47 @@
+<!-- 
+
+    By this excerise we will learn below things
+    1) How transform: translate() works
+    2) How transform: translateX() works
+    2) How transform: translateY() works
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Transform Translate</title>
+  </head>
+  <style>
+    .box {
+      color: white;
+      background-color: blue;
+      height: 80px;
+      width: 80px;
+      margin: 1rem;
+      text-align: center;
+      font-size: 12px;
+      transition: 3s;
+    }
+
+    .translateXBox:hover {
+      transform: translateX(500px);
+    }
+
+    .translateYBox:hover {
+      transform: translateY(150px);
+    }
+
+    .translateBox:hover {
+      transform: translate(150px, 150px);
+      /* translate (+right, +bottom) */
+    }
+  </style>
+  <body>
+    <div class="translateXBox box">I translate horizontally</div>
+    <div class="translateYBox box">I translate vertically</div>
+    <div class="translateBox box">
+      I translate horizontally and vertically both
+    </div>
+  </body>
+</html>
