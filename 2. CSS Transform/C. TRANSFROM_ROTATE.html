@@ -1,0 +1,72 @@
+<!-- 
+
+    By this excerise we will learn below things
+    1) How transform: rotate(deg) works
+    2) How transform: rotate(-deg) works
+    3) How transform: rotate(turn) works
+    4) How transform: rotate(grad) works
+    5) How transform: rotate(rad) works
+
+    NOTE: 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Transform Translate</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      height: 100vh;
+    }
+    .box {
+      color: white;
+      background-color: blue;
+      height: 100px;
+      width: 100px;
+      font-size: 8px;
+      transition: 2s;
+      padding: 0.8rem;
+    }
+    .rotate1:hover {
+      /* It will rotate clockwise 20degree */
+      transform: rotate(20deg);
+      /* Make sure that it will work on safari */
+      -webkit-transform: rotate(45deg);
+      /* Make sure it will work on Mozilla Firebox */
+      -moz-transform: rotate(45deg);
+    }
+    .rotate2:hover {
+      /* It will rotate counter-clockwise 20degree */
+      transform: rotate(-20deg);
+    }
+    .rotate3:hover {
+      /* It will rotate 2 turns clockwise */
+      transform: rotate(2turn);
+    }
+    .rotate4:hover {
+      /* It will rotate clockwise 360 degree as 400grad=360 degrees */
+      transform: rotate(400grad);
+    }
+    .rotate5:hover {
+      /* It will rotate clockwise 3 radians */
+      transform: rotate(3rad);
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="rotate1 box">Transform: Rotate(20 deg)</div>
+      <div class="rotate2 box">Transform: Rotate(-20 deg)</div>
+      <div class="rotate3 box">Transform: Rotate(2 turn)</div>
+      <div class="rotate4 box">Transform: Rotate(400 grad)</div>
+      <div class="rotate5 box">Transform: Rotate(3rad)</div>
+    </div>
+  </body>
+</html>
