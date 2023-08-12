@@ -1,0 +1,88 @@
+<!-- 
+
+*The transform-origin property in CSS is used to define the point around which a transformation should be applied. 
+*By default, the transformation origin is set to the center of the element. 
+*However, you can adjust it to other points, such as the top-right corner, using specific keywords or coordinate values.
+    
+
+    NOTE: 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Transform Translate</title>
+  </head>
+  <style>
+    body {
+      background-color: black;
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      column-gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      height: 100vh;
+    }
+    .box {
+      color: white;
+      background-color: rgb(217, 50, 78);
+      height: 100px;
+      width: 100px;
+      font-size: 18px;
+      transition: transform 2s;
+      padding: 0.8rem;
+      border: 2px solid white;
+    }
+    .revolve:hover {
+      transform: rotate(1turn);
+    }
+    .rotate1 {
+      transform-origin: top;
+    }
+    .rotate2 {
+      transform-origin: bottom;
+    }
+    .rotate3 {
+      transform-origin: right;
+    }
+    .rotate4 {
+      transform-origin: left;
+    }
+    .rotate5 {
+      transform-origin: right top;
+    }
+    .rotate6 {
+      transform-origin: left top;
+    }
+    .rotate7 {
+      transform-origin: left bottom;
+    }
+    .rotate8 {
+      transform-origin: right bottom;
+    }
+
+    /* Now the another way to define the transfrom origin is to use co-ordinates as percentage */
+    .rotate9 {
+      transform-origin: 100% 0%;
+      /* 100% of the element's width from the left and 0 from the top */
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="rotate1 box revolve">Top</div>
+      <div class="rotate2 box revolve">Bottom</div>
+      <div class="rotate3 box revolve">right</div>
+      <div class="rotate4 box revolve">left</div>
+      <div class="rotate5 box revolve">right top</div>
+      <div class="rotate6 box revolve">left top</div>
+      <div class="rotate7 box revolve">left bottom</div>
+      <div class="rotate8 box revolve">right bottom</div>
+      <div class="rotate9 box revolve">100% 0%;</div>
+    </div>
+  </body>
+</html>
