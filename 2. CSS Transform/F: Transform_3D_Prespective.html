@@ -1,0 +1,56 @@
+<!-- 
+	Keep in mind that the perspective property is applied to the parent container of the transformed elements. 
+	The value you choose for the perspective determines the strength of the perspective effect. 
+	Larger values create a stronger perspective effect, while smaller values create a shallower effect.
+
+	What does Perspective do?
+	 	This creates the illusion of depth and distance between the viewer, the transformed elements, and the imaginary 3D plane.
+		lesser the value closer the transfromed element neat to our view/eye.
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>translate in 3D</title>
+    <style type="text/css">
+      body {
+        background-color: black;
+      }
+      .image {
+        perspective: 4500px;
+        overflow: hidden;
+        border: 2px solid white;
+        height: max-content;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 8px;
+      }
+
+      img {
+        width: 300px;
+        margin: auto;
+        transition: transform 1.3s;
+      }
+
+      img:hover {
+        transform: translateZ(800px) rotateY(45deg) translateX(-150px);
+        /* translateZ(800px): It will bring the image near to screen with it we must need to use Persective */
+        /* rotateY(45deg): Rotate the image from vertical axis */
+        /* translateX(-150px): Helps to move the image left (Horizontally) */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="image">
+      <img src="cat.jpg" alt="" />
+    </div>
+  </body>
+</html>
