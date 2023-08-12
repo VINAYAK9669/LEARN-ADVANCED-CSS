@@ -1,0 +1,64 @@
+<!-- 
+
+  In CSS, the skew() transformation function is used to apply a 
+  skew (distortion) transformation to an element.
+  
+    By this excerise we will learn below things
+
+    1) How transform: skewX(deg) works
+    2) How transform: skewY(deg) works
+    3) How transform: skew(deg) works
+    3) How transform: skew(deg,deg) works
+  
+
+    NOTE: 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Transform Translate</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      height: 100vh;
+    }
+    .box {
+      color: white;
+      background-color: blue;
+      height: 100px;
+      width: 100px;
+      font-size: 8px;
+      transition: 2s;
+      padding: 0.8rem;
+    }
+
+    .skew1:hover {
+      transform: skewX(20deg);
+    }
+    .skew2:hover {
+      transform: skewY(-20deg);
+    }
+    .skew3:hover {
+      transform: skew(20deg);
+    }
+    .skew4:hover {
+      transform: skew(20deg, 40deg);
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="skew1 box">Transform: skewX(20deg)</div>
+      <div class="skew2 box">Transform: skewY(-20deg)</div>
+      <div class="skew3 box">Transform:skew(20deg)</div>
+      <div class="skew4 box">Transform: skew(20deg, 40deg)</div>
+    </div>
+  </body>
+</html>
