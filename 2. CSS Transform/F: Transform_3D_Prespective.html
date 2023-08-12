@@ -14,6 +14,7 @@
     <meta charset="UTF-8" />
     <title>translate in 3D</title>
     <style type="text/css">
+      
       body {
         background-color: black;
       }
@@ -21,7 +22,8 @@
         perspective: 4500px;
         overflow: hidden;
         border: 2px solid white;
-        height: max-content;
+        height: 300px;
+        width:400px;
         padding: 1rem;
         display: flex;
         align-items: center;
@@ -34,23 +36,25 @@
       }
 
       img {
-        width: 300px;
+        width: 350px;
         margin: auto;
         transition: transform 1.3s;
       }
 
       img:hover {
-        transform: translateZ(800px) rotateY(45deg) translateX(-150px);
+        width:500px;
+        transform: translateZ(800px) rotateY(45deg) translateX(-300px);
         /* translateZ(800px): It will bring the image near to screen with it we must need to use Persective */
         /* rotateY(45deg): Rotate the image from vertical axis */
         /* translateX(-150px): Helps to move the image left (Horizontally) */
       }
+
     </style>
   </head>
 
   <body>
     <div class="image">
-      <img src="cat.jpg" alt="" />
+      <img src="https://wallpapercave.com/wp/wp1936429.jpg" alt="" />
     </div>
   </body>
 </html>
