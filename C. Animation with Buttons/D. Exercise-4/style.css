@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.btn {
+  text-decoration: none;
+  color: rgb(0, 248, 215);
+  font-size: larger;
+  border: 2px solid white;
+  padding: 2rem;
+  width: fit-content;
+  text-align: center;
+  position: relative;
+  transition: all 1s;
+  letter-spacing: -1px;
+}
+
+.btn:hover {
+  color: white;
+  font-weight: 900;
+  font-size: 24px;
+  border-width: 7px;
+  letter-spacing: 10px;
+}
