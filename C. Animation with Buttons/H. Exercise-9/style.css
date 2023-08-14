@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.btn {
+  padding: 20px 40px;
+  font-size: 1.8rem;
+  background: none;
+  position: relative;
+  color: white;
+  border: 2px solid white;
+  overflow: hidden;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: orange;
+  z-index: -1;
+  border-radius: 0% 0% 50% 50%;
+  height: 0;
+  transition: all 0.5s;
+}
+
+.btn:hover::before {
+  height: 180%;
+}
