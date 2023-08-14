@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.btn {
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+  border: 2px solid white;
+  padding: 2rem;
+  width: 200px;
+  text-align: center;
+  position: relative;
+  color: transparent;
+  overflow: hidden;
+  background-color: rgb(255, 255, 159);
+}
+.btn::before {
+  content: "Hover Me!";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 0, 43);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 1s;
+  color: white;
+  border: 2px solid black;
+}
+
+.btn::after {
+  content: "Hover Me!";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: white;
+  background-color: rgb(255, 0, 43);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(100%, -100%);
+  transition: transform 1s;
+}
+a:hover::before {
+  transform: translate(-100%, 100%);
+}
+a:hover::after {
+  transform: translate(0, 0);
+}
