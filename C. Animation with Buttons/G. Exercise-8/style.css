@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.btn {
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+  border: 2px solid white;
+  padding: 2rem;
+  width: 200px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.btn::before {
+  content: "Hover Me!";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  color: black;
+  transform: scale(5);
+  opacity: 0;
+}
+
+a:hover::before {
+  transform: scale(1);
+  opacity: 1;
+}
