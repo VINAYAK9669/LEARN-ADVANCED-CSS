@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Effects</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="#" data-text="Home">Home </a>
+        </li>
+        <li>
+          <a href="#" data-text="Contact">Contact</a>
+        </li>
+        <li>
+          <a href="#" data-text="Service">Service </a>
+        </li>
+        <li>
+          <a href="#" data-text="About">About </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+  <script src="app.js"></script>
+</html>
