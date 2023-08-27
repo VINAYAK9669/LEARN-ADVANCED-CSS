@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+.card {
+  max-width: 500px;
+}
+.card .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  row-gap: 1rem;
+  padding: 1rem;
+  border: 2px solid wheat;
+  border-radius: 11px;
+  position: relative;
+  overflow: hidden;
+}
+.card .content h2 {
+  font-size: 2rem;
+  text-align: left;
+}
+.content::before {
+  content: "";
+  position: absolute;
+  bottom: calc(-100% + 5px);
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(223, 0, 37);
+  transition: all 0.5s;
+  z-index: -1;
+}
+.content:hover::before {
+  bottom: 0;
+}
