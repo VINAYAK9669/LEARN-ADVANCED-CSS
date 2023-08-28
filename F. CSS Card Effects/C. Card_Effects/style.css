@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 250px;
+  border: 2px solid whitesmoke;
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    rgb(125, 0, 0),
+    rgb(0, 5, 65),
+    rgb(255, 190, 69)
+  );
+}
+.card .content {
+  width: 200px;
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: -1;
+}
+.card:hover .content {
+  transform: translateX(-40%);
+  opacity: 1;
+  z-index: 11;
+}
+.content h2 {
+  letter-spacing: 3px;
+  margin-bottom: 1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.content p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 200;
+  font-size: smaller;
+}
+.card img {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 300px;
+  transition: all 0.3s;
+  z-index: 1;
+}
+.card:hover img {
+  transform: scale(1.1) translateY(-18px);
+  bottom: 0;
+}
