@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+.container ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+ul li {
+  transition: all 2s;
+  transform-origin: right;
+}
+ul:hover li {
+  transform: rotate(45deg) translateY(-400px);
+
+  filter: blur(20px);
+  opacity: 0;
+}
+ul li:nth-child(2) {
+  transition-delay: 0.2s;
+}
+ul li:nth-child(3) {
+  transition-delay: 0.4s;
+}
+ul li:nth-child(4) {
+  transition-delay: 0.6s;
+}
+ul li:nth-child(5) {
+  transition-delay: 0.8s;
+}
+ul li:nth-child(6) {
+  transition-delay: 1s;
+}
