@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.background {
+  height: 100vh;
+  background: url(./Capture.JPG);
+  background-position: 0 0;
+  animation: animated-pattern 10s linear infinite;
+  overflow: hidden;
+  perspective: 30px;
+}
+@keyframes animated-pattern {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 476px 0px;
+  }
+}
