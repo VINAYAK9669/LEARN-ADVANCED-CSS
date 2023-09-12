@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  animation: float 3s linear infinite alternate;
+  /* Animation name "float" */
+  /* Duration: 3 seconds */
+  /* Timing function: linear (constant speed) */
+  /* Iteration count: infinite (repeats indefinitely) */
+  /* Direction: alternate (alternates between forwards and backwards) */
+}
+
+span::before {
+  content: "TRANSITION";
+  text-transform: uppercase;
+  color: yellow;
+  animation: textRotater 5s infinite;
+}
+@keyframes textRotater {
+  0% {
+    content: "Animation";
+  }
+  50% {
+    content: "Transformation";
+  }
+  100% {
+    content: "transition";
+  }
+}
