@@ -6,8 +6,13 @@
 - [Transition-Properties](https://codepen.io/vinayak9669/pen/Jjxbxdy)
 
 ## B. CSS Transform
-- [Link to CSS Transform](F:%20Transform_3D_Prespective.html)
-
+- [Transform-Translate](https://codepen.io/vinayak9669/pen/PoVbVbL)
+- [Transition-Scale](https://codepen.io/vinayak9669/pen/Vwgmgpd)
+- [Transition-Rotate](https://codepen.io/vinayak9669/pen/KKJNJoM))
+- [Transform-Origin](https://codepen.io/vinayak9669/pen/QWYGYxy)
+- [Transform-Skew](https://codepen.io/vinayak9669/pen/QWYGYxy)
+- [Transform-Origin](https://codepen.io/vinayak9669/pen/JjxbxBv)
+- [Transform-3D-Perspective](https://codepen.io/vinayak9669/pen/BaMQMqa)
 ## C. Animation with Buttons
 - [Link to Animation with Buttons](C.%20Animation%20with%20Buttons)
 
