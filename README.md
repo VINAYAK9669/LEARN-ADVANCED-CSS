@@ -13,7 +13,8 @@
 - [Transform-Origin](https://codepen.io/vinayak9669/pen/JjxbxBv)
 - [Transform-3D-Perspective](https://codepen.io/vinayak9669/pen/BaMQMqa)
 ## C. Animation with Buttons
-- [Link to Animation with Buttons](C.%20Animation%20with%20Buttons)
+- [1](https://codepen.io/vinayak9669/pen/ExrNMYR)
+- [2](https://codepen.io/vinayak9669/pen/OJdbqVy)
 
 ## D. Images & Animation
 - [Link to Images & Animation](D.%20Images__animation/style.css)
