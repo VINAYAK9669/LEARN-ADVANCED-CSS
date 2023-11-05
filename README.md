@@ -1,7 +1,9 @@
 # LEARN-ADVANCED-CSS
 
 ## A. CSS Transition Basics
-- [Link to CSS Transition Basics](C.%20Properties%20Can%20be%20Transient.html)
+- [Link to CSS Transition Basics](https://codepen.io/vinayak9669/pen/jOdVdON)
+- [Transition-Timing-Function](https://codepen.io/vinayak9669/pen/wvNoNvO)
+- [Transition-Properties](https://codepen.io/vinayak9669/pen/Jjxbxdy)
 
 ## B. CSS Transform
 - [Link to CSS Transform](F:%20Transform_3D_Prespective.html)
