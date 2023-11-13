@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  border: 2px solid black;
+  padding: 2rem 6rem;
+
+  position: relative;
+  overflow: hidden;
+}
+a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 130%;
+  width: 80px;
+  background-color: red;
+  transform: skew(-15deg);
+  z-index: -1;
+  animation: slide 3s linear infinite;
+  transition: all 0.3s;
+}
+@keyframes slide {
+  from {
+    left: -80px;
+  }
+  to {
+    left: 100%;
+  }
+}
+a:hover::before {
+  width: 100%;
+  transform: skew(0deg);
+  animation: none;
+}
