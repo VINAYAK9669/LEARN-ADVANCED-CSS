@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  border: 2px solid black;
+  padding: 1rem 1.6rem;
+  transition: all 0.3s;
+}
+a:hover {
+  color: red;
+  border-color: red;
+  animation: shake 0.3s linear 1;
+}
+@keyframes shake {
+  33% {
+    transform: rotate(10deg);
+  }
+  66% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
